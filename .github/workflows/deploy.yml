@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f "package.json" ]; then
-            npm ci
+            npm install
           else
             echo "No package.json found, skipping install"
           fi
